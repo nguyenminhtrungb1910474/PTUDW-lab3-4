@@ -22,6 +22,12 @@
 
                 <button class="btn btn-sm btn-success" @click="goToAddContact">
                     <i class="fas fa-plus"></i> Thêm mới
+                    <router-link
+                        :to="{
+                            name: 'contact.create',                    
+                        }"
+                    >
+                    </router-link>
                 </button>
 
                 <button
@@ -48,15 +54,6 @@
             >
                 <span class="mt-2 badge badge-warning">
                     <i class="fas fa-edit"></i> Hiệu chỉnh</span
-                >
-            </router-link>
-            <router-link
-                :to="{
-                    name: 'contact.create',                    
-                }"
-            >
-                <span class="mt-2 badge badge-primary">
-                    <i class="fas fa-edit"></i> Thêm mới</span
                 >
             </router-link>
         </div>
