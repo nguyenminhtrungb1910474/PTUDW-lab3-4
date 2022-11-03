@@ -50,6 +50,15 @@
                     <i class="fas fa-edit"></i> Hiệu chỉnh</span
                 >
             </router-link>
+            <router-link
+                :to="{
+                    name: 'contact.create',                    
+                }"
+            >
+                <span class="mt-2 badge badge-primary">
+                    <i class="fas fa-edit"></i> Thêm mới</span
+                >
+            </router-link>
         </div>
     </div>
 </template>
